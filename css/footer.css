@@ -1,0 +1,124 @@
+/* Colors based on screenshot */
+:root {
+  --dark-green: #0f2e22;
+  --light-bg: #f4faf8;
+  --text-gray: #555;
+  --black: #000;
+}
+
+/* Newsletter section */
+.newsletter {
+  background: var(--dark-green);
+  padding: 40px;
+  color: white;
+}
+
+.newsletter-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0px;
+}
+
+.icon-text {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-right: auto;
+  padding-right: 40px;
+}
+
+.icon-text h2 {
+  margin: 0;
+}
+
+.input-box {
+  display: flex;
+  border: 2px solid white;
+  margin-left: 40px;
+}
+
+.input-box input {
+  padding: 15px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+
+.input-box button {
+  padding: 15px 25px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer area */
+footer {
+  background: var(--light-bg);
+  padding: 30px 40px;
+  position: relative;
+}
+
+.footer-links {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 130px;
+}
+
+.column h3 {
+  margin-bottom: 15px;
+  color: var(--dark-green);
+}
+
+.column a {
+  display: block;
+  color: var(--text-gray);
+  text-decoration: none;
+  margin: 8px 0;
+}
+
+/* Payment logos */
+.payment {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+
+.payment img {
+  height: 40px;
+}
+
+.social {
+  background: var(--dark-green);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.social img {
+  width: 30px;
+}
+
+.copyright {
+  text-align: right;
+  margin: 0;
+  color: white;
+}
