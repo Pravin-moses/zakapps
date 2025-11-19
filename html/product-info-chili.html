@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abokichi - OKAZU Chili Miso</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/product-info.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../js/cart.js"></script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span class="currency">USD <i class="fas fa-chevron-down"></i></span>
+            <span class="stores"><i class="fas fa-map-marker-alt"></i> Stores</span>
+        </div>
+        <div class="top-bar-right">
+            <span>Login/ Register</span>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../assets/hero/ABOKICHI_logo_landscape.jpg" alt="ABOKICHI">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="products.html"><b>Shop</b> <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#"><b>Our story</b></a></li>
+                <li><a href="#"><b>Recipes</b></a></li>
+                <li><a href="#"><b>Contact</b></a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="container">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Shop > OKAZU - CHILI MISO (230ml)</div>
+
+    <div class="product-wrapper">
+
+        <!-- Product Images -->
+        <div class="image-section">
+            <img id="mainImage" src="../assets/best sellers/p1_1can.png" 
+                 alt="OKAZU Chili Miso" class="main-img">
+
+            <div class="thumbnail-container">
+                <button class="carousel-arrow left-arrow" onclick="changeMainImage(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="thumbnail-row">
+                    <img src="../assets/best sellers/p1_1can.png" class="thumb active" onclick="selectImage(0, this)">
+                    <img src="../assets/best sellers/spoon_gravy.png" class="thumb" onclick="selectImage(1, this)">
+                    <img src="../assets/best sellers/p1_1can.png" class="thumb" onclick="selectImage(2, this)">
+                </div>
+                <button class="carousel-arrow right-arrow" onclick="changeMainImage(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="details-section">
+            <h1>OKAZU - CHILI MISO</h1>
+
+            <div class="price-box">
+                <span class="current-price">$13.99</span>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span class="reviews">24 Reviews</span>
+            </div>
+
+            <p class="description">
+                An umami-rich chili, miso, and sesame oil based condiment. Perfect for topping rice, 
+                meat, tofu, burgers, fish, eggs, and more. A little goes a long way!
+            </p>
+
+            <div class="buttons">
+                <button class="add-cart">ADD TO CART</button>
+                <button class="buy-now" onclick="window.location.href='order-success.html'">Buy Now</button>
+            </div>
+
+            <div class="wishlist">♡ WISHLIST</div>
+
+            <div class="share">
+                SHARE:
+                <span class="icon">🔵</span>
+                <span class="icon">🐦</span>
+                <span class="icon">📌</span>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Tabbed Section -->
+<section class="tabbed-section">
+    <div class="tab-container">
+        <div class="tab-headers">
+            <button class="tab-header active" onclick="openTab(event, 'description')">DESCRIPTION</button>
+            <button class="tab-header" onclick="openTab(event, 'reviews')">REVIEWS</button>
+            <button class="tab-header" onclick="openTab(event, 'videos')">VIDEOS</button>
+            <button class="tab-header" onclick="openTab(event, 'comments')">COMMENTS</button>
+        </div>
+    </div>
+</section>
+
+<!-- Tab Content Section -->
+<section class="tab-content-section">
+    <div class="content-container">
+        <!-- Description Tab -->
+        <div id="description" class="tab-content active">
+            <p>OKAZU Chili MISO is an umami-rich chili, miso, and sesame oil based condiment often eaten with rice in Japan. This versatile sauce brings authentic Japanese flavors to any dish.</p>
+            
+            <p>Created by a Japanese chef with decades of experience, this condiment balances heat with the deep, savory notes of organic miso paste. The combination of sunflower and sesame oils creates a silky texture that coats ingredients beautifully.</p>
+            
+            <p>Try it as a marinade for grilled meats, mix it into your homemade ramen, or spread it on sandwiches for an umami kick. Some customers even use it as a pizza topping!</p>
+            
+            <p>Winner of multiple culinary awards including Best Condiment at the Toronto Food Festival and featured on cooking shows across North America.</p>
+            
+            <p><strong>HEAT LEVEL: MILD-MEDIUM</strong></p>
+            
+            <p><strong>INGREDIENTS: SUNFLOWER OIL, SESAME OIL, GARLIC, MISO PASTE (ORGANIC SOYBEANS, RICE, SALT), TAMARI SOY SAUCE (NON-GMO SOYBEANS, SALT, SUGAR), SUGAR, CHILI POWDER, WHITE SESAME SEEDS</strong></p>
+            
+            <p>CONTAINS: SESAME, SOYBEANS. MAY CONTAIN: MUSTARD.</p>
+            
+            <p>PRODUCT SEPARATION IS NORMAL. REFRIGERATE AFTER OPENING. USE WITHIN 3 MONTHS FOR BEST FLAVOR.</p>
+            
+            <p><strong>NET WEIGHT:</strong> 230ml (7.8 fl oz)</p>
+        </div>
+
+        <!-- Reviews Tab -->
+        <div id="reviews" class="tab-content">
+            <div class="review-item">
+                <div class="review-header">
+                    <strong>Tom H.</strong>
+                    <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                </div>
+                <p>"This stuff is liquid gold! I put it on everything from scrambled eggs to grilled chicken. The flavor is complex and addictive. Just ordered three more jars!"</p>
+                <span class="review-date">Posted on November 12, 2025</span>
+            </div>
+            
+            <div class="review-item">
+                <div class="review-header">
+                    <strong>Rachel K.</strong>
+                    <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                </div>
+                <p>"Perfect heat level for me. Not too spicy but has enough kick to make things interesting. The miso flavor really shines through. My new favorite condiment!"</p>
+                <span class="review-date">Posted on November 5, 2025</span>
+            </div>
+            
+            <div class="review-item">
+                <div class="review-header">
+                    <strong>Daniel W.</strong>
+                    <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                </div>
+                <p>"As someone who lived in Japan for 5 years, this brings back so many memories. Authentic taste and high quality ingredients. Worth every penny!"</p>
+                <span class="review-date">Posted on October 28, 2025</span>
+            </div>
+        </div>
+
+        <!-- Videos Tab -->
+        <div id="videos" class="tab-content">
+            <div class="video-item">
+                <h3>5 Quick Recipes with Chili OKAZU</h3>
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Video: Easy Weeknight Dinners</p>
+                </div>
+                <p>Discover five simple recipes you can make in under 20 minutes using OKAZU Chili Miso.</p>
+            </div>
+            
+            <div class="video-item">
+                <h3>The Story Behind OKAZU</h3>
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Video: Chef Interview</p>
+                </div>
+                <p>Meet the chef who created this amazing condiment and learn about the inspiration behind OKAZU.</p>
+            </div>
+            
+            <div class="video-item">
+                <h3>Grilled Chicken with OKAZU Marinade</h3>
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Video: BBQ Recipe Tutorial</p>
+                </div>
+                <p>Master the art of using OKAZU as a marinade for perfectly flavored grilled meats.</p>
+            </div>
+        </div>
+
+        <!-- Comments Tab -->
+        <div id="comments" class="tab-content">
+            <div class="comment-form">
+                <h3>Leave a Comment</h3>
+                <textarea placeholder="Share your thoughts about this product..."></textarea>
+                <button class="submit-comment">Post Comment</button>
+            </div>
+            
+            <div class="comment-item">
+                <div class="comment-header">
+                    <strong>Alex Martinez</strong>
+                    <span class="comment-date">November 15, 2025</span>
+                </div>
+                <p>Does this need to be refrigerated? I want to keep it at my office for lunch.</p>
+                <div class="comment-reply">
+                    <strong>Admin:</strong> Yes, please refrigerate after opening to maintain freshness. A small cooler bag works great for office storage!
+                </div>
+            </div>
+            
+            <div class="comment-item">
+                <div class="comment-header">
+                    <strong>Jennifer Lee</strong>
+                    <span class="comment-date">November 10, 2025</span>
+                </div>
+                <p>Just tried this on ramen and WOW! Game changer. Will be ordering the variety pack next!</p>
+            </div>
+            
+            <div class="comment-item">
+                <div class="comment-header">
+                    <strong>Mark Stevens</strong>
+                    <span class="comment-date">November 3, 2025</span>
+                </div>
+                <p>Great for meal prep! I use it to marinate chicken breasts for the whole week. Highly recommend!</p>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Footer Section -->
+    <footer>
+      <div class="footer-links">
+        <div class="column">
+          <h3>LINKS</h3>
+          <a href="#">About us</a>
+          <a href="#">Contact us</a>
+          <a href="#">Customer Service</a>
+          <a href="#">FAQs</a>
+          <a href="#">Sitemap</a>
+        </div>
+
+        <div class="column">
+          <h3>INFORMATION</h3>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refund policy</a>
+          <a href="#">Press</a>
+        </div>
+
+        <div class="column payment">
+          <img src="visa.png" alt="Visa" />
+          <img src="mastercard.png" alt="Mastercard" />
+          <img src="applepay.png" alt="Apple Pay" />
+          <img src="amex.png" alt="Amex" />
+        </div>
+      </div>
+    </footer>
+    <div class="social">
+      <div class="social-icons">
+        <img src="facebook.svg" />
+        <img src="twitter.svg" />
+        <img src="instagram.svg" />
+        <img src="youtube.svg" />
+        <img src="pinterest.svg" />
+        <img src="linkedin.svg" />
+      </div>
+      <p class="copyright">© 2021 Abokichi.</p>
+    </div>
+
+<script>
+// Tab functionality
+function openTab(evt, tabName) {
+    var tabContents = document.getElementsByClassName('tab-content');
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('active');
+    }
+    
+    var tabHeaders = document.getElementsByClassName('tab-header');
+    for (var i = 0; i < tabHeaders.length; i++) {
+        tabHeaders[i].classList.remove('active');
+    }
+    
+    document.getElementById(tabName).classList.add('active');
+    evt.currentTarget.classList.add('active');
+}
+
+// Image carousel functionality
+const images = [
+    '../assets/best sellers/p1_1can.png',
+    '../assets/best sellers/spoon_gravy.png',
+    '../assets/best sellers/p1_1can.png'
+];
+
+let currentImageIndex = 0;
+
+function selectImage(index, element) {
+    currentImageIndex = index;
+    document.getElementById('mainImage').src = images[index];
+    
+    const thumbs = document.querySelectorAll('.thumb');
+    thumbs.forEach(thumb => thumb.classList.remove('active'));
+    element.classList.add('active');
+}
+
+function changeMainImage(direction) {
+    currentImageIndex += direction;
+    
+    if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1;
+    } else if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+    }
+    
+    document.getElementById('mainImage').src = images[currentImageIndex];
+    
+    const thumbs = document.querySelectorAll('.thumb');
+    thumbs.forEach((thumb, index) => {
+        if (index === currentImageIndex) {
+            thumb.classList.add('active');
+        } else {
+            thumb.classList.remove('active');
+        }
+    });
+}
+</script>
+
+</body>
+</html>

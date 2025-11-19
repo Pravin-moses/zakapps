@@ -50,7 +50,7 @@
           videoOverlay.style.pointerEvents = "auto";
           playButton.innerHTML = '<i class="fas fa-play"></i>';
           videoTitle.style.opacity = "1";
-        }, 13000); // 13 seconds
+        }, 12000); // 12 seconds
       });
 
       video.addEventListener("pause", function () {
