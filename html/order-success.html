@@ -5,17 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Placed - Abokichi</title>
     <link rel="stylesheet" href="../css/order-success.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="success-container">
-        <div class="success-icon">
-            <i class="fas fa-check-circle"></i>
+    <div class="content-wrapper">
+        <div class="success-container">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>Order Placed Successfully!</h1>
+            <p>Thank you for your purchase. Your order has been confirmed.</p>
+            <button class="back-home-btn" onclick="window.location.href='home.html'">Back to Home</button>
+            <p class="redirect-message">Redirecting to home page in <span id="countdown">5</span> seconds...</p>
         </div>
-        <h1>Order Placed Successfully!</h1>
-        <p>Thank you for your purchase. Your order has been confirmed.</p>
-        <button class="back-home-btn" onclick="window.location.href='home.html'">Back to Home</button>
-        <p class="redirect-message">Redirecting to home page in <span id="countdown">5</span> seconds...</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-links">
+        <div class="column">
+          <h3>LINKS</h3>
+          <a href="#">About us</a>
+          <a href="#">Contact us</a>
+          <a href="#">Customer Service</a>
+          <a href="#">FAQs</a>
+          <a href="#">Sitemap</a>
+        </div>
+
+        <div class="column">
+          <h3>INFORMATION</h3>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refund policy</a>
+          <a href="#">Press</a>
+        </div>
+
+        <div class="column payment">
+          <img src="../assets/footer-payment-logo/visa.png" alt="Visa" />
+          <img src="../assets/footer-payment-logo/mastercard.png" alt="Mastercard" />
+          <img src="../assets/footer-payment-logo/ipay.png" alt="Apple Pay" />
+          <img src="../assets/footer-payment-logo/american-express.png" alt="Amex" />
+        </div>
+      </div>
+    </footer>
+    <div class="social">
+      <div class="social-icons">
+        <img src="../assets/given_icons/Symbols.svg" />
+        <img src="../assets/given_icons/Symbols (1).svg" />
+        <img src="../assets/given_icons/Symbols (2).svg" />
+        <img src="../assets/given_icons/Symbols (3).svg" />
+        <img src="../assets/given_icons/pinterest.png" />
+        <img src="../assets/given_icons/linkedin.png" />
+      </div>
+      <p class="copyright">© 2021 Abokichi.</p>
     </div>
 
     <script>

@@ -37,6 +37,11 @@ letter-spacing: 0px;
 color: #FFFFFF;
   font-size: 17px;
 }
+.icon-text .subscribe-description {
+margin-top: -12px;
+font:normal normal 100 14px/35px "Raleway", sans-serif;
+font-weight: 100;
+}
 
 .input-box {
   display: flex;
@@ -102,7 +107,8 @@ font-family: "Proxima Nova", sans-serif;
 }
 
 .payment img {
-  height: 40px;
+  height: 25px;
+  margin-bottom: 22px;
 }
 
 .social {
@@ -122,7 +128,7 @@ font-family: "Proxima Nova", sans-serif;
 }
 
 .social img {
-  width: 30px;
+  width: 25px;
 }
 
 .copyright {

@@ -128,16 +128,22 @@ body {
 
 .sort-dropdown {
     padding: 8px 15px;
-    border: 1px solid #ddd;
-    background: white;
-    font-size: 14px;
+    border: none;
+    background: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     cursor: pointer;
     min-width: 200px;
+    color: #333;
+}
+
+.sort-dropdown option {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
 }
 
 .sort-dropdown:focus {
     outline: none;
-    border-color: #333;
 }
 
 /* Filter Panel */
