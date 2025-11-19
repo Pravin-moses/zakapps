@@ -353,6 +353,23 @@ height: 250px;
     color: #999;
 }
 
+/* Sponsors Section */
+.sponsors-section {
+    background: white;
+    padding: 60px 80px;
+}
+
+.sponsors-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors-image {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
