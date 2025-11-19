@@ -7,8 +7,8 @@ body {
 
 .container {
     max-width: 1200px;
-    margin-top: 25px;
-    margin-left: 77px;
+    margin: 25px auto 0;
+    padding: 0 40px;
 }
 
 .breadcrumb {
@@ -19,11 +19,13 @@ body {
 
 .product-wrapper {
     display: flex;
-    gap: 40px;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .image-section {
-    flex: 1;
+    flex: 0 0 400px;
     text-align: center;
 }
 
@@ -33,21 +35,70 @@ body {
     border: 1px solid #eee;
 }
 
+.thumbnail-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .thumbnail-row {
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top: 15px;
 }
 
 .thumb {
     width: 80px;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.thumb:hover {
+    border-color: #333;
+}
+
+.thumb.active {
+    border-color: #1a3a2e;
+    box-shadow: 0 0 5px rgba(26, 58, 46, 0.3);
+}
+
+.carousel-arrow {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .details-section {
-    flex: 1;
+    flex: 0 0 400px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.details-section h1 {
+    text-align: center;
+}
+
+.details-section .description {
+    text-align: center;
 }
 
 .price-box {
@@ -55,6 +106,7 @@ body {
     gap: 12px;
     align-items: center;
     margin: 10px 0;
+    justify-content: center;
 }
 
 .current-price {
@@ -66,6 +118,10 @@ body {
     font-size: 18px;
     color: #888;
     text-decoration: line-through;
+}
+
+.rating {
+    text-align: center;
 }
 
 .rating .reviews {
@@ -82,6 +138,7 @@ body {
     display: flex;
     gap: 15px;
     margin: 20px 0;
+    justify-content: center;
 }
 
 .add-cart,
@@ -106,11 +163,13 @@ body {
     margin: 10px 0;
     cursor: pointer;
     color: #444;
+    text-align: center;
 }
 
 .share {
     margin-top: 15px;
     font-size: 14px;
+    text-align: center;
 }
 
 .icon {
