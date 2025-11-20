@@ -28,13 +28,15 @@ body {
 .image-section {
     flex: 0 0 400px;
     text-align: left;
-    margin-left: -325px;
+    margin-left: -225px;
 }
 
 .main-img {
-    width: 100%;
-    max-width: 300px;
-    border: 1px solid #eee;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border: 1px solid #b8b8b8;
+    margin-left: -20px;
 }
 
 .thumbnail-container {
@@ -44,7 +46,7 @@ body {
     gap: 15px;
     margin-top: 15px;
     max-width: 400px;
-    margin-left: -50px;
+    margin-left: -70px;
     margin-right: auto;
 }
 
@@ -94,17 +96,21 @@ body {
 }
 
 .details-section {
-    flex: 0 0 400px;
-    max-width: 400px;
+    max-width: 500px;
+    flex: 0 0 500px;
     text-align: center;
 }
 
 .details-section h1 {
     text-align: center;
+    font-size: 28px;
 }
 
 .details-section .description {
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
 }
 
 .price-box {
@@ -116,18 +122,35 @@ body {
 }
 
 .current-price {
-    font-size: 28px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .old-price {
-    font-size: 18px;
+    font-size: 20px;
     color: #888;
     text-decoration: line-through;
+    font-style: italic;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .rating {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating .stars {
+    display: flex;
+    gap: 2px;
+}
+
+.rating .stars i {
+    font-size: 14px;
+    color: #ff9933;
 }
 
 .rating .reviews {
@@ -142,9 +165,11 @@ body {
 
 .buttons {
     display: flex;
-    gap: 15px;
-    margin: 20px 0;
-    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .add-cart,
@@ -153,11 +178,12 @@ body {
     font-size: 15px;
     border: none;
     cursor: pointer;
+    min-width: 190px;
 }
 
 .add-cart {
     background: white;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .buy-now {
@@ -170,16 +196,35 @@ body {
     cursor: pointer;
     color: #444;
     text-align: center;
+    font-family: "source sans pro", sans-serif;
+    font-size: 14px;
+    font-weight:500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.wishlist-icon {
+    width: 15px;
+    height: 15px;
 }
 
 .share {
-    margin-top: 15px;
-    font-size: 14px;
+    font-weight:300;
+    margin-top: 30px;
+    font-size: 17px;
     text-align: center;
+    max-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.icon {
-    margin-left: 10px;
+.share-icon {
+    width: 16px;
+    height: 16px;
     cursor: pointer;
 }
 
@@ -275,6 +320,12 @@ body {
 }
 
 .review-stars {
+    display: flex;
+    gap: 2px;
+}
+
+.review-stars i {
+    font-size: 14px;
     color: #ff9933;
 }
 
