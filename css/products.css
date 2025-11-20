@@ -158,8 +158,9 @@ body {
 
 .filter-panel.active {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     gap: 40px;
+    justify-content: start;
 }
 
 .filter-section {
@@ -169,12 +170,16 @@ body {
 }
 
 .filter-title {
-    font-size: 16px;
+    height: 30px;
+    font-size: 18px;
+    font-family: "raleway", sans-serif;
     font-weight: 700;
     color: #333;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #e0e0e0;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-left: 3px solid #0c3322;
 }
 
 .filter-options {
@@ -188,6 +193,7 @@ body {
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    font-family: "raleway", sans-serif;
     font-size: 14px;
     color: #666;
     transition: color 0.3s;
