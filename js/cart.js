@@ -1,7 +1,14 @@
-// Cart functionality
+/**
+ * Shopping Cart Functionality
+ * Manages cart count with localStorage persistence
+ */
+
 let cartCount = 0;
 
-// Initialize cart from localStorage
+/**
+ * Initialize cart from localStorage
+ * Restores cart count on page load
+ */
 function initCart() {
     const savedCount = localStorage.getItem('cartCount');
     if (savedCount) {
@@ -10,13 +17,16 @@ function initCart() {
     }
 }
 
-// Add item to cart
+/**
+ * Add item to cart
+ * Increments cart count, saves to localStorage, and updates UI
+ */
 function addToCart() {
     cartCount++;
     localStorage.setItem('cartCount', cartCount);
     updateCartDisplay();
     
-    // Show a brief animation or feedback
+    // Show bounce animation for visual feedback
     const cartIcon = document.querySelector('.cart-icon');
     if (cartIcon) {
         cartIcon.classList.add('cart-bounce');
@@ -26,7 +36,10 @@ function addToCart() {
     }
 }
 
-// Update cart count display
+/**
+ * Update cart count display in header
+ * Creates badge element if it doesn't exist
+ */
 function updateCartDisplay() {
     let cartBadge = document.querySelector('.cart-badge');
     const cartIcon = document.querySelector('.fa-shopping-bag');
@@ -45,11 +58,14 @@ function updateCartDisplay() {
     }
 }
 
-// Initialize cart when page loads
+/**
+ * Initialize cart when page loads
+ * Sets up event listeners for Add to Cart buttons
+ */
 document.addEventListener('DOMContentLoaded', function() {
     initCart();
     
-    // Add event listeners to all "Add to Cart" buttons
+    // Attach click handlers to all Add to Cart buttons
     const addToCartButtons = document.querySelectorAll('.add-cart, .add-to-cart');
     addToCartButtons.forEach(button => {
         button.addEventListener('click', function(e) {

@@ -1,24 +1,35 @@
-// Filter and Sort Functionality
+/**
+ * Product Filter and Sort Functionality
+ * Handles multi-criteria filtering and sorting for product listing page
+ */
 document.addEventListener('DOMContentLoaded', function() {
+    // DOM Elements
     const filterBtn = document.getElementById('filterBtn');
     const filterPanel = document.getElementById('filterPanel');
     const sortDropdown = document.getElementById('sortDropdown');
     const productCards = document.querySelectorAll('.product-card');
     const productCount = document.getElementById('productCount');
     
+    // Active filters object to track selected filters
     let activeFilters = {
         category: [],
         type: [],
-        flavor: []
+        flavor: [],
+        rating: []
     };
 
-    // Toggle filter panel
+    /**
+     * Toggle filter panel visibility
+     */
     filterBtn.addEventListener('click', function() {
         filterPanel.classList.toggle('active');
         filterBtn.classList.toggle('active');
     });
 
-    // Filter functionality
+    /**
+     * Filter checkbox change handler
+     * Updates activeFilters object and applies filters
+     */
     const filterCheckboxes = document.querySelectorAll('input[data-filter]');
     filterCheckboxes.forEach(checkbox => {
         checkbox.addEventListener('change', function() {
@@ -26,10 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const filterValue = this.value;
             
             if (this.checked) {
+                // Add filter if not already in array
                 if (!activeFilters[filterType].includes(filterValue)) {
                     activeFilters[filterType].push(filterValue);
                 }
             } else {
+                // Remove filter from array
                 activeFilters[filterType] = activeFilters[filterType].filter(v => v !== filterValue);
             }
             
@@ -37,7 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Apply filters to products
+    /**
+     * Apply all active filters to product cards
+     * Shows/hides products based on filter criteria
+     * Updates visible product count
+     */
     function applyFilters() {
         let visibleCount = 0;
         
@@ -68,6 +85,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
             
+            // Check rating filter (show if rating is >= any selected minimum rating)
+            if (activeFilters.rating.length > 0) {
+                const cardRating = parseInt(card.getAttribute('data-rating'));
+                // Get the lowest selected rating (if 5 and 3 are selected, use 3 as minimum)
+                const minSelectedRating = Math.min(...activeFilters.rating.map(r => parseInt(r)));
+                // Show product if its rating is >= the lowest selected rating
+                if (cardRating < minSelectedRating) {
+                    shouldShow = false;
+                }
+            }
+            
             // Show or hide the card
             if (shouldShow) {
                 card.style.display = 'flex';
@@ -77,11 +105,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Update product count
+        // Update visible product count
         productCount.textContent = visibleCount;
     }
 
-    // Sort functionality
+    /**
+     * Sort dropdown change handler
+     * Sorts products by name (alphabetically) or price
+     */
     sortDropdown.addEventListener('change', function() {
         const sortValue = this.value;
         const productsGrid = document.querySelector('.products-grid');

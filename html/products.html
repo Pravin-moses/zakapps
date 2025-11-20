@@ -26,7 +26,7 @@
     <!-- Main Navigation -->
     <nav class="main-nav">
         <div class="nav-container">
-            <div class="logo">
+            <div class="logo" onclick="window.location.href='../index.html'" style="cursor: pointer;">
                 <img src="../assets/hero/ABOKICHI_logo_landscape.jpg" alt="ABOKICHI">
             </div>
             <ul class="nav-menu">
@@ -52,7 +52,7 @@
     <!-- Products Filter Section -->
     <section class="products-filter-section">
          <div class="products-count">
-                <h2>Products (<span id="productCount">16</span>)</h2>
+                <h2>Products (<span id="productCount">12</span>)</h2>
             </div><br>
         <div class="filter-container">
            
@@ -146,6 +146,45 @@
                     </label>
                 </div>
             </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Rating</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox" value="5" data-filter="rating">
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            & Up
+                        </span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="4" data-filter="rating">
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            & Up
+                        </span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="3" data-filter="rating">
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            & Up
+                        </span>
+                    </label>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -153,7 +192,7 @@
     <section class="products-section">
         <div class="products-grid">
             <!-- Product Card 1 -->
-            <div class="product-card" onclick="window.location.href='product-info.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="multi-set" data-flavor="chili" data-price="135.00" data-name="OKAZU Lovers Set (230ml/12 jars)">
+            <div class="product-card" onclick="window.location.href='product-info.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="multi-set" data-flavor="chili" data-price="135.00" data-name="OKAZU Lovers Set (230ml/12 jars)" data-rating="5">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_12cans.png" alt="OKAZU Lovers Set">
                 </div>
@@ -175,7 +214,7 @@
             </div>
 
             <!-- Product Card 2 -->
-            <div class="product-card" onclick="window.location.href='product-info-chili.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="single-pack" data-flavor="chili" data-price="13.99" data-name="OKAZU - CHILI MISO - Japanese miso chili oil condiment (230ml)">
+            <div class="product-card" onclick="window.location.href='product-info-chili.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="single-pack" data-flavor="chili" data-price="13.99" data-name="OKAZU - CHILI MISO - Japanese miso chili oil condiment (230ml)" data-rating="5">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_1can.png" alt="OKAZU - CHILI MISO">
                 </div>
@@ -196,7 +235,7 @@
             </div>
 
             <!-- Product Card 3 -->
-            <div class="product-card" onclick="window.location.href='product-info-soup.html'" style="cursor: pointer;" data-category="miso-soup" data-type="multi-set" data-flavor="original" data-price="19.99" data-name="Instant Miso Soup Tasting Set">
+            <div class="product-card" onclick="window.location.href='product-info-soup.html'" style="cursor: pointer;" data-category="miso-soup" data-type="multi-set" data-flavor="original" data-price="19.99" data-name="Instant Miso Soup Tasting Set" data-rating="5">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_3packets.png" alt="Instant Miso Soup Tasting Set">
                 </div>
@@ -218,7 +257,7 @@
             </div>
 
             <!-- Product Card 4 -->
-            <div class="product-card" onclick="window.location.href='product-info-matcha.html'" style="cursor: pointer;" data-category="instant-matcha" data-type="single-pack" data-flavor="matcha" data-price="34.00" data-name="ABO Matcha: Uji matcha, Organic, Ceremonial grade">
+            <div class="product-card" onclick="window.location.href='product-info-matcha.html'" style="cursor: pointer;" data-category="instant-matcha" data-type="single-pack" data-flavor="matcha" data-price="34.00" data-name="ABO Matcha: Uji matcha, Organic, Ceremonial grade" data-rating="5">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_1silvercan.png" alt="ABO Matcha">
                 </div>
@@ -239,7 +278,7 @@
             </div>
 
             <!-- Product Card 5 (Repeat) -->
-            <div class="product-card highlighted" onclick="window.location.href='product-info.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="multi-set" data-flavor="chili" data-price="135.00" data-name="OKAZU Lovers Set (230ml/12 jars)">
+            <div class="product-card" onclick="window.location.href='product-info.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="multi-set" data-flavor="chili" data-price="135.00" data-name="OKAZU Lovers Set (230ml/12 jars)" data-rating="5">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_12cans.png" alt="OKAZU Lovers Set">
                 </div>
@@ -261,7 +300,7 @@
             </div>
 
             <!-- Product Card 6 (Repeat) -->
-            <div class="product-card highlighted" onclick="window.location.href='product-info-chili.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="single-pack" data-flavor="chili" data-price="13.99" data-name="OKAZU - CHILI MISO - Japanese miso chili oil condiment (230ml)">
+            <div class="product-card" onclick="window.location.href='product-info-chili.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="single-pack" data-flavor="chili" data-price="13.99" data-name="OKAZU - CHILI MISO - Japanese miso chili oil condiment (230ml)" data-rating="4">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_1can.png" alt="OKAZU - CHILI MISO">
                 </div>
@@ -282,7 +321,7 @@
             </div>
 
             <!-- Product Card 7 (Repeat) -->
-            <div class="product-card highlighted" onclick="window.location.href='product-info-soup.html'" style="cursor: pointer;" data-category="miso-soup" data-type="multi-set" data-flavor="original" data-price="19.99" data-name="Instant Miso Soup Tasting Set">
+            <div class="product-card" onclick="window.location.href='product-info-soup.html'" style="cursor: pointer;" data-category="miso-soup" data-type="multi-set" data-flavor="original" data-price="19.99" data-name="Instant Miso Soup Tasting Set" data-rating="4">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_3packets.png" alt="Instant Miso Soup Tasting Set">
                 </div>
@@ -304,7 +343,7 @@
             </div>
 
             <!-- Product Card 8 (Repeat) -->
-            <div class="product-card highlighted" onclick="window.location.href='product-info-matcha.html'" style="cursor: pointer;" data-category="instant-matcha" data-type="single-pack" data-flavor="matcha" data-price="34.00" data-name="ABO Matcha: Uji matcha, Organic, Ceremonial grade">
+            <div class="product-card" onclick="window.location.href='product-info-matcha.html'" style="cursor: pointer;" data-category="instant-matcha" data-type="single-pack" data-flavor="matcha" data-price="34.00" data-name="ABO Matcha: Uji matcha, Organic, Ceremonial grade" data-rating="4">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_1silvercan.png" alt="ABO Matcha">
                 </div>
@@ -325,7 +364,7 @@
             </div>
 
                        <!-- Product Card 9 (Repeat)-->
-            <div class="product-card" onclick="window.location.href='product-info-matcha.html'" style="cursor: pointer;" data-category="instant-matcha" data-type="single-pack" data-flavor="matcha" data-price="34.00" data-name="ABO Matcha: Uji matcha, Organic, Ceremonial grade">
+            <div class="product-card" onclick="window.location.href='product-info-matcha.html'" style="cursor: pointer;" data-category="instant-matcha" data-type="single-pack" data-flavor="matcha" data-price="34.00" data-name="ABO Matcha: Uji matcha, Organic, Ceremonial grade" data-rating="3">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_1silvercan.png" alt="ABO Matcha">
                 </div>
@@ -346,7 +385,7 @@
             </div>
 
             <!-- Product Card 10 (Repeat) -->
-            <div class="product-card highlighted" onclick="window.location.href='product-info.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="multi-set" data-flavor="chili" data-price="135.00" data-name="OKAZU Lovers Set (230ml/12 jars)">
+            <div class="product-card highlighted" onclick="window.location.href='product-info.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="multi-set" data-flavor="chili" data-price="135.00" data-name="OKAZU Lovers Set (230ml/12 jars)" data-rating="5">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_12cans.png" alt="OKAZU Lovers Set">
                 </div>
@@ -367,8 +406,8 @@
                 </div>
             </div>
 
-            <!-- Product Card 11 (Repeat) -->
-            <div class="product-card highlighted" onclick="window.location.href='product-info-chili.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="single-pack" data-flavor="chili" data-price="13.99" data-name="OKAZU - CHILI MISO - Japanese miso chili oil condiment (230ml)">
+            <!-- Product Card 10 (Repeat) -->
+            <div class="product-card" onclick="window.location.href='product-info-chili.html'" style="cursor: pointer;" data-category="chili-okazu" data-type="single-pack" data-flavor="chili" data-price="13.99" data-name="OKAZU - CHILI MISO - Japanese miso chili oil condiment (230ml)" data-rating="3">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_1can.png" alt="OKAZU - CHILI MISO">
                 </div>
@@ -388,8 +427,8 @@
                 </div>
             </div>
 
-            <!-- Product Card 12 (Repeat) -->
-            <div class="product-card highlighted" onclick="window.location.href='product-info-soup.html'" style="cursor: pointer;" data-category="miso-soup" data-type="multi-set" data-flavor="original" data-price="19.99" data-name="Instant Miso Soup Tasting Set">
+            <!-- Product Card 11 (Repeat) -->
+            <div class="product-card" onclick="window.location.href='product-info-soup.html'" style="cursor: pointer;" data-category="miso-soup" data-type="multi-set" data-flavor="original" data-price="19.99" data-name="Instant Miso Soup Tasting Set" data-rating="5">
                 <div class="product-image">
                     <img src="../assets/best sellers/p1_3packets.png" alt="Instant Miso Soup Tasting Set">
                 </div>
